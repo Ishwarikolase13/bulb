@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb ON/OFF</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bulb ON / OFF</h1>
+
+    <!-- Bulb Image -->
+    <img id="bulb" src="images/bulboff.jpeg" alt="Bulb">
+
+    <br>
+
+    <!-- Buttons -->
+    <button onclick="turnOn()">ON</button>
+    <button onclick="turnOff()">OFF</button>
+
+    <script>
+        function turnOn() {
+            document.getElementById("bulb").src = " images/bulbon.jpeg"      }
+
+        function turnOff() {
+            document.getElementById("bulb").src = "images/bulboff.jpeg";
+        }
+    </script>
+
+</body>
+</html>
